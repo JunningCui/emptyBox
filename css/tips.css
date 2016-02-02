@@ -1,0 +1,21 @@
+@charset "utf-8";*{margin:0;padding:0;font-weight:lighter}a{text-decoration:none;font-size:0.26rem;font-family:fz,"微软雅黑";color:inherit}html{overflow:hidden;width:100%;height:100%;-webkit-font-smoothing:antialiased;-webkit-overflow-scrolling:touch;-moz-overflow-scrolling:touch;-o-overflow-scrolling:touch;overflow-scrolling:touch;-webkit-text-size-adjust:none;-moz-text-size-adjust:none;-ms-text-size-adjust:none;text-size-adjust:none}html.ns{overflow:hidden}body{position:relative;overflow:hidden;width:100%;height:100%;background:#fff;color:#505050;font-size:14px;font-family:fz,"微软雅黑"}a,body{font-family:fz,"微软雅黑"/9;-webkit-tap-highlight-color:transparent}img{border:0}li,ol,ul{list-style:none}dd,dl,dt,li,ul{margin:0;padding:0}input,textarea{font-family:inherit;font-size:inherit;font-style:inherit;font-weight:inherit;font-size:100%;border:0;resize:none;outline:0;-webkit-appearance:none;white-space:pre-wrap}body,div,fieldset,form,h1,h2,h3,h4,h5,h6,html,legend,p{-webkit-text-size-adjust:none}i{font-style:normal}
+@font-face{font-family:fz;src:url(./font/lth.eot);src:url(./font/lth.TTF) format('truetype'),url(./font/lth.woff) format('woff'),url(./font/lth.svg) format('svg')}
+.wrap{margin: 0 auto;width: auto;font-family: fz,"微软雅黑";height: 100%;background-color: #efeff4;display: -webkit-flex;display: flex;flex-direction:row;flex-wrap: nowrap;justify-content:center;align-items:center;}
+.payStatusComponent{box-sizing:border-box;width: 100%;height: 2.96rem;padding: 0 0.2rem;background: #fff;  position: absolute;top: 0;left: 0;border: 1px solid #dcdcdc;}
+.payStatusComponent .upSide{height: 1.5rem;border-bottom: 1px solid #dcdcdc;width: 100%;text-align: center;    box-sizing: border-box;
+    padding: 0.45rem 0;}
+.payStatusComponent .downSide{height: 1.41rem;width: 100%;padding: 0.3rem 0.2rem;box-sizing:border-box;text-align: center;}
+.cBtnG{background: #0db310;width:100%;line-height: 0.86rem;font-family: fz,"微软雅黑";color:#fff;font-size: 0.32rem;text-align: center;}
+.cBtnG .icon{font-size: 0.32rem;padding-right: 0.22rem}
+
+.HcommonBtnG,.HcommonBtnS{display:inline-block;width: 1.84rem;height: 0.65rem;line-height: 0.65rem;color: #fff;font-family: fz,"微软雅黑";text-align: center;font-size: 0.28rem;border-radius: 3px;margin-left: 0.15rem;}
+.HcommonBtnG{background: #0db310;}
+.HcommonBtnS{background: #cad0da;}
+.HcommonBtnG:hover,.HcommonBtnG:active{background: #0caa0f}
+.HcommonBtnS:hover,.HcommonBtnS:active{background: #c0c6cf}
+.errorBtn{display: inline-block;color: #e63232;vertical-align: middle;}
+.errorBtn .icon{font-size: 0.6rem;}
+.errorText{font-size: 0.3rem;color: #e63232;vertical-align: middle;}
+.succeedBtn{display: inline-block;color: #36bf29;vertical-align: middle;}
+.succeedBtn .icon{font-size: 0.6rem}
+.succeedText{font-size: 0.3rem;color: #36bf29;vertical-align: middle;}

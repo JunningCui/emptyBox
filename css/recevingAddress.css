@@ -1,0 +1,103 @@
+
+/*默认地址编辑 页面 start*/
+.defaultAddressComponent{padding:0.17rem 0.19rem;font-family: 'fz',"微软雅黑";height: 2.21rem}
+.defaultAddressComponent .addressDetail{}
+.defaultAddressComponent .addressDetail li{}
+.defaultAddressComponent .addressDetail li:last-child{border-top: 1px solid #cfcfcf;}
+.defaultAddressComponent .addressDetail li .receivingName,.defaultAddressComponent .addressDetail li .receivingTel{font-size: 0.26rem;padding-right:0.14rem;font-weight: bold;}
+.defaultAddressComponent .addressDetail li .receivingAddressBox{display: inline-block;width: 4.38rem;padding: 0.1rem 0}
+.defaultAddressComponent .addressDetail li .receivingAddress,.defaultAddressComponent .addressDetail li .emailNum{font-size: 0.26rem;line-height: 0.34rem;padding-right: 0.15rem;color: #505050}
+
+.defaultAddressComponent .addressDetail .addressOperation{padding-top: 0.11rem;box-sizing: border-box;height: 0.6rem;font-size: 0.24rem;color: #505050;line-height:0.45rem;font-family: fz,"微软雅黑";}
+.defaultAddressComponent .addressDetail .addressOperation .J_defaultAddressText{padding:0 0.13rem;}
+.chooseBtn{display: inline-block;}
+.chooseBtn .icon{font-size: 0.3rem !important}
+.selectedBtn{color: #0db310;}
+.editAddressBtn,.deleteAddressBtn{display: inline-block;font-size: 0.24rem;border: 1px solid #7c7b7b;border-radius: 3px;margin:0 0 0 0.3rem;height: 0.3rem;line-height: 0.3rem;padding: 0.04rem 0.07rem}
+.editAddressBtn .icon,.deleteAddressBtn .icon{padding: 0 0.1rem;font-size: 0.24rem;}
+.editAddressBtn:active,.editAddressBtn:focus,.deleteAddressBtn:active,.deleteAddressBtn:focus{background: #ddd}
+.addressList{width: 100%;height: auto;}
+.addressList>li:first-child{margin-top: 0}
+.addressList>li{margin-top: 0.15rem}
+
+.addNewAddressBtn{margin: 0.2rem auto;background: #0db310;width:5.91rem;line-height: 0.7rem;font-family: fz,"微软雅黑";color:#fff;font-size: 0.32rem;text-align: center;}
+.addNewAddressBtn .icon{font-size: 0.32rem;padding-right: 0.22rem;}
+.borderTop1{height: 1px;background-color: #d9d9d9;width: 100%}
+/*默认地址编辑 页面 end*/ 
+
+
+/*添加新地址 start*/
+
+.addNewAddressComponent{width: 100%;height: 3.2rem;background: #fff;border-bottom: 1px solid #dcdcdc;border-top: 1px solid #dcdcdc;}
+.addNewAddressComponent .basicInfo{}
+.addNewAddressComponent .basicInfo li{border-bottom: 1px solid #dcdcdc;padding: 0.02rem 0.19rem;height: 0.8rem;line-height: 0.8rem;box-sizing:border-box;}
+.addNewAddressComponent .basicInfo li label{display: inline-block;width: 1.73rem;font-size: 0.28rem;color: #505050}
+.addNewAddressComponent .basicInfo li input{border:none;height: 0.6rem;color:#000;font-size: 0.26rem;}
+
+#J_province{position: relative;}
+#J_province .addressSelected{position: absolute;width: 100%;top:0;/*display: none;*/}
+#J_province .addressSelected .province,#J_province .addressSelected .city,#J_province .addressSelected .county{border: 0;line-height: 0.4rem;height: 0.8rem;width: 30%;/*opacity: 0;*/}
+#J_province .addressSelected .province:hover,#J_province .addressSelected .province:focus,#J_province .addressSelected .province:active,,#J_province .addressSelected .province:visited{opacity: 1;}    
+#J_province .addressSelected .city:hover,#J_province .addressSelected .city:focus,#J_province .addressSelected .city:active,,#J_province .addressSelected .city:visited{opacity: 1;}    
+#J_province .addressSelected .county:hover,#J_province .addressSelected .county:focus,#J_province .addressSelected .county:active,,#J_province .addressSelected .county:visited{opacity: 1;}    
+
+/*添加新地址 end*/
+
+
+
+/*新加配货地址*/
+.yet{ width:70%;overflow:hidden;position: absolute;top: 0;box-sizing: border-box;left: 0.8rem;}
+.yet .yetleft{ float:left; font-size:0.25rem; margin-left:0.1rem;}
+.yet .yetright{ float:right;}
+.yet .yetright em{display:inline; width:0px; height:100%; vertical-align:middle; zoom:1;}
+.yet .yetright p{ width:1rem; height:1rem; position:relative; margin-right:1rem; display:inline-block; vertical-align:middle;}
+.yet .yetleft span,.yet .yetleft em{ display:inline-block;}
+.yet .yetleft span em{ color:#e63232; display:inline-block; margin-left:1rem;}
+.yet .yetright p i{ width:0; height:0.8rem; border-left:0.1rem solid #7c7b7b; -webkit-transform:rotate(-45deg); transform:rotate(-45deg); position:absolute; top:0; right:0;}
+.yet .yetright p b{ width:0; height:0.8rem; border-left:0.1rem solid #7c7b7b; -webkit-transform:rotate(45deg); transform:rotate(45deg); position:absolute; top:50%; right:0;}
+.yet .address{ display:inline-block;}
+.yet .address img{ width:0.5rem; margin-left:0.25rem;}
+.yet .address span{ margin-left:1rem; font-size:0.25rem;}
+.yet .yetleft i{ display:block; color:#999; font-size:0.25rem; margin-left:0.38rem; padding-top:0.25rem;}
+
+
+
+.row01{ border-top:1px solid #c7c7c7; margin-top:10px; padding-top:10px; overflow:hidden;}
+.col01,.col02{ display:block; float:left; font-size:12px; color:#9b9b9c;}
+.col01{ padding-right:10px;}
+.address{ color:#020202;  position: relative; cursor:pointer;}
+.icon-location {display: inline-block;width: 13px;height:16px;background: url('../img/detail-sprites.png') no-repeat center center;
+  background-size: 11px 16px;position: absolute;top:0px;right:-20px;}
+.mask{background-color:#000;opacity:.5;z-index:1000;width:100%;height:100%;position:fixed;left:0;top:0;}
+.filter-wrap{position:fixed;z-index:20005;top:0;right:0;background-color:#fff;width:90%;height:100%;-webkit-transform:translate3d(100%,0,0);-ms-transform:translate3d(100%,0,0);transform:translate3d(100%,0,0);-webkit-transition:-webkit-transform .5s;-ms-transition:-ms-transform .5s;transition:transform .5s;display:-moz-box;display:-webkit-box;display:-o-box;display:box;-moz-box-orient:vertical;-webkit-box-orient:vertical;-o-box-orient:vertical;box-orient:vertical}
+.filter-wrap.show{-webkit-transform:translate3d(0,0,0);-ms-transform:translate3d(0,0,0);transform:translate3d(0,0,0);-webkit-overflow-scrolling:touch;-webkit-box-sizing:border-box;box-sizing:border-box;overflow:auto;}
+.filter-hd{background-color:#f5f6f8;height:44px;border-bottom:1px solid #d2d3d5}
+.filter-hd ul{display:-moz-box;display:-webkit-box;display:-webkit-flex;display:-moz-flex;display:-ms-flexbox;display:-ms-flex;display:flex}
+.filter-hd li{-webkit-box-flex:1;-moz-box-flex:1;-webkit-flex:1;-moz-flex:1;-ms-flex:1;flex:1;line-height:43px;text-align:center}
+.filter-hd li a{display:block}
+.filter-hd li.current{color:#7843ab;border-bottom:2px solid #7843ab}
+.filter-hd li.current a{color:#7843ab}
+.filter-bd{overflow:auto;overflow-x:hidden;background-color:#f5f6f8;-webkit-box-flex:1;-moz-box-flex:1;-webkit-flex:1;-moz-flex:1;-ms-flex:1;flex:1;}
+.filter-item li{position:relative;line-height:42px;border-bottom:1px solid #d2d3d5}
+.filter-item li a{display:block;padding:0 16px}
+.filter-item li.active a{color:#f00}
+.filter-item li.active:after{content:'';position:absolute;right:16px;bottom:17px;width:16px;height:8px;border-left:2px solid #d42220;border-bottom:2px solid #d42220;-webkit-transform:rotate(-45deg);-ms-transform:rotate(-45deg);transform:rotate(-45deg);}
+#header{position:relative;top:0;left:0;width:100%;height:0.64rem;display:-moz-box;display:-webkit-box;display:-webkit-flex;display:-moz-flex;display:-ms-flexbox;display:-ms-flex;display:flex;background-color:#fff;z-index:999}
+.goback{ position:absolute;left: 0.31rem;top: 0rem; width:100%; height:100%;}
+.icon{position:relative;display:inline-block;background:url(../img/foot_03.png) no-repeat 0.6rem 1rem;vertical-align:middle; background-size:50%;}
+.h-title{line-height:0.64rem;font-size:0.26rem;color:#020202;text-align:center;padding:0 0.2rem;font-weight:normal;-webkit-box-flex:1;-moz-box-flex:1;-webkit-flex:1;-moz-flex:1;-ms-flex:1;flex:1}
+.goback b{ width:0; height:0.3rem; border-left:1px solid #7c7b7b; -webkit-transform:rotate(-45deg); transform:rotate(45deg); position:absolute; top:16%; left:0;}
+.goback i{ width:0; height:0.3rem; border-left:1px solid #7c7b7b; -webkit-transform:rotate(45deg); transform:rotate(-45deg); position:absolute; top:50%; left:0;}
+
+
+
+
+
+
+
+
+
+
+
+
+

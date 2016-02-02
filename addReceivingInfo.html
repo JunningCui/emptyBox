@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=0.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+	<meta name=”apple-mobile-web-app-capable” content=”yes” />
+	<link rel="stylesheet" type="text/css" href="css/default.css">
+	<link rel="stylesheet" href="css/iconfont/iconfont.css">
+	<link rel="stylesheet" href="css/recevingAddress.css">
+	<script type="text/javascript" src="js/resize.js"></script>
+<style type="text/css">
+body{position: relative;}
+	.wrap{overflow: scroll;}
+
+</style>
+</head>
+<script type="text/javascript">
+	;(function (doc, win) {
+    var docEl = doc.documentElement,
+      resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+      recalc = function () {
+        var clientWidth = docEl.clientWidth;
+        var clientHeight = docEl.clientHeight;
+        $(".wrap").css("height",clientHeight)
+    }
+})
+</script>
+<body>
+<div class="wrap">
+	<header class="headerToFixed">
+		<!-- <div class="closeBtn">
+		   <i class="icon iconfont">&#xe600;</i>
+		</div>
+		<div class="headerTitle">
+			添加收货地址
+		</div> -->
+	</header>
+	<div class="mt1s8 contentWrap">
+		<div class="addNewAddressComponent">
+			<ul class="basicInfo">
+			 	<li>
+			 		<label for="receivingName">收货人姓名</label>
+			 		<input id="receivingName" type="text" placeholder="请输入姓名"/>
+			 	</li>
+			 	<li>
+			 		<label for="receivingTel">手机号码</label>
+			 		<input id="receivingTel" type="text" placeholder="请输入电话号码"/>
+			 	</li>
+			 	<li id="J_province">
+			 	<div>
+			 		<label>收货地址</label>
+			 		<div class="moreBtn fr">
+			 			<i class="icon iconfont">&#xe603;</i>
+			 		</div>
+			 		<input type="hidden" id="areaIdKey" value="北京市 海淀区" placeholder="请选择收货地址">
+		 			<div class="yet" id="btn-select-region">
+			            <div class="yetleft">
+							<div class="address">
+								<span class="provi_city_area_id" provinceid="18" cityid="424" areaid="2974">北京 北京市 西城区</span>
+							</div>
+						</div>		
+						
+			            <div class="yetright" hidden="hidden">
+			                    <div class="closeBtn">
+								   <i class="icon iconfont">&#xe600;</i>
+								</div>
+			            </div>
+			        </div>
+</div>
+
+
+
+		 		<div class="filter-wrap" id="J_filterWrap">
+				    <header id="header" class="head">
+				    <a href="javascript:;" class="goback closeBtn"><i></i><b></b></a>
+				        <h2 class="h-title">收货地址</h2>
+				    </header>
+				    <div class="filter-bd">
+						<!-- 省份 -->
+						<div class="filter-item J_filterContents" id="stock_province_item">
+							 <ul>
+							 	
+							 </ul>
+						</div>
+						<!-- 市 -->
+						 <div id="stock_city_item" class="filter-item J_filterContents" style="display: none;">
+								<ul id="show_city">
+									<!-- <li><a href="javascript:void(0);" city_id="330100" flag = "city" class="data_area">杭州市</a></li> -->
+								</ul>
+				         </div>
+						 <!-- 县 -->
+						<div id="stock_area_item" class="filter-item J_filterContents" style="display: none;">
+								<ul id="show_area">
+									<!-- <li><a href="javascript:void(0);" area_id="330203" flag = "area" class="select_area_js">海曙区</a></li> -->
+								</ul>
+				         </div>
+				    </div>
+				</div>
+			 	</li>
+			 	<li>
+			 		<label for="street">街道</label>
+			 		<input id="street" type="text" placeholder="请输入街道地址详情"/>
+			 	</li>
+			 </ul>
+		</div>
+	</div>
+	<footer class="footerToFixed">
+		<!-- <div class="borderTop1"></div> -->
+		<div class="addNewAddressBtn">
+			保存地址
+		</div>
+	</footer>
+</div>
+</body>
+<script type="text/javascript" src="js/zepto.min.js"></script>
+<script type="text/javascript" src="js/ssq.js"></script>
+</html>	

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>支付方式</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=0.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+	<meta name=”apple-mobile-web-app-capable” content=”yes” />
+	<link rel="stylesheet" type="text/css" href="css/default.css">
+	<link rel="stylesheet" href="css/iconfont/iconfont.css">
+	<script type="text/javascript" src="js/resize.js"></script>
+	<style>
+.paymentComponent{width: 100%;height: auto;background: #fff;box-sizing: border-box;padding: 0.01rem;overflow: hidden;}
+.paymentComponent .paymentList li{box-sizing:border-box;padding: 0.2rem;height: 1rem;}
+.paymentComponent .paymentList li .iconBox{width: 10%;margin: 0.1rem 0.2rem}
+.paymentComponent .paymentList li .iconBox img{width: 100%}
+.paymentComponent .paymentList li .check-box{line-height: 0.85rem;}
+.paymentComponent .paymentList li .cashText {line-height: 0.9rem;margin-left: 0.2rem;font-size: 0.3rem}
+	</style>
+
+</head>
+<body>
+<div class="wrap">
+	<header class="headerToFixed">
+	
+	</header>
+	<div class="mt1s8 contentWrap">
+		<div class="paymentComponent">
+			<ul  class="paymentList">
+				<li>
+					<div class="check-box0p check-box">
+						<input type="radio" name="partnerListRadio" />
+					</div>
+					<div class="iconBox fl">
+						<img src="./img/btn/weixin.png" alt="">
+					</div>
+				</li>
+				<li>
+					<div class="check-box0p check-box">
+						<input type="radio" name="partnerListRadio" />
+					</div>
+					<div class="iconBox fl">
+						<img src="./img/btn/card.png" alt="">
+					</div>
+				</li>
+				<li>
+					<div class="check-box0p check-box">
+						<input type="radio" name="partnerListRadio" />
+					</div>
+					
+					<div class="cashText fl">
+					收银台
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<footer class="footerToFixed">
+		<div class="operateBtnG">
+			确定
+		</div>
+	</footer>
+</div>
+<script type="text/javascript" src="js/zepto.min.js"></script>
+</body>

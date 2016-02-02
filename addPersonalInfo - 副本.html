@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>addPersonalInfo</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=0.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+	<meta name=”apple-mobile-web-app-capable” content=”yes” />
+	<link rel="stylesheet" type="text/css" href="css/default.css">
+	<link rel="stylesheet" href="css/iconfont/iconfont.css">
+	<script type="text/javascript" src="js/resize.js"></script>
+	<script type="text/javascript" src="js/zepto.min.js"></script>
+</head>
+<body>
+<div class="wrap">
+	<header class="headerToFixed">
+		<div class="closeBtn">
+		   <i class="icon iconfont">&#xe600;</i>
+		</div>
+		<div class="headerTitle">
+			个人信息
+		</div>
+	</header>
+	<div class="mt1s8 contentWrap">
+		<div class="editPerInfoComponent">
+			<ul class="basicInfo">
+			 	<li>
+			 		<label for="personalName">昵称</label>
+			 		<input id="personalName" type="text" placeholder="请输入昵称"/>
+			 	</li>
+			 	<li>
+			 		<label for="personalTel">电话</label>
+			 		<input id="personalTel" type="text" placeholder="请输入电话号码"/>
+			 	</li>
+			 	<li>
+			 		<label>使用二维码</label>
+			 		<div class="moreBtn fr">
+			 			<i class="icon iconfont">&#xe600;</i>
+			 		</div>
+			 	</li>
+			 	<li>
+			 		<label>现金券</label>
+			 		<div class="moreBtn fr">
+			 			<i class="icon iconfont">&#xe600;</i>
+			 		</div>
+			 	</li>
+			 	<li>
+			 		<label>物流券</label>
+			 		<div class="moreBtn fr">
+			 			<i class="icon iconfont">&#xe600;</i>
+			 		</div>
+			 	</li>
+			 	<li>
+			 		<label>收货地址</label>
+			 		<div class="moreBtn fr">
+			 			<i class="icon iconfont">&#xe600;</i>
+			 		</div>
+			 	</li>
+			 </ul>
+		</div>
+	</div>
+	<footer class="footerToFixed">
+		<!-- <div class="borderTop1"></div> -->
+		<div class="commonBtnG">
+			保存
+		</div>
+		<div class="footerMenu mts15">
+			<ul>
+				<li><a href="###">店首页</a></li>
+				<li id="goCheck" class="allProQuan"><a href="./settleAccounts.html"></a>店首页<span id="allProQuan" ></span></li>
+			</ul>
+		</div>
+	</footer>
+</div>
+</body>
+<script type="text/javascript">
+	$(function (){
+		// $("#J_province").on('click',function (){
+		// 	$("#province").click()
+		// })
+	})
+</script>
+</html>	

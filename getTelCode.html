@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>个人信息</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=0.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+	<meta name=”apple-mobile-web-app-capable” content=”yes” />
+	<link rel="stylesheet" type="text/css" href="css/default.css">
+	<link rel="stylesheet" href="css/iconfont/iconfont.css">
+	<script type="text/javascript" src="js/resize.js"></script>
+	<style>
+.editPerInfoComponent .basicInfo li label{width: 1.1rem;}
+.getCodeLi{position: relative;}
+.getTelCode{position: absolute;display: inline-block;width: 1.9rem;height: 0.6rem;line-height: 0.6rem;border-radius: 3px;border: 1px solid #1db820;text-align: center;top: 0.1rem;}
+.getting{background: #eee;color: #aaa;border: 1px solid #ddd}
+	</style>
+</head>
+<body>
+<div class="wrap">
+	<!-- <header class="headerToFixed">
+		<div class="closeBtn">
+		   <i class="icon iconfont">&#xe600;</i>
+		</div>
+		<div class="headerTitle">
+			个人信息
+		</div>
+	</header> -->
+	<div class="contentWrap mts15">
+		<div class="editPerInfoComponent mts15">
+			<ul class="basicInfo">
+			 	<li>
+			 		<label for="personalTel">手机号</label>
+			 		<input id="personalTel" type="text" placeholder="请输入手机号码"/>
+			 	</li>
+			 	<li class="getCodeLi">
+			 		<label for="personalCode">验证码</label>
+			 		<input id="personalCode" type="text" placeholder="请输入验证码"/>
+			 		<div id="getTelCode" class="fr getTelCode">
+			 			获取验证码
+			 		</div>
+			 		<div id="getTelCode" class="fr getTelCode getting">
+			 			正在获取验证码
+			 		</div>
+			 	</li>
+			 </ul>
+		</div>
+	</div>
+	<footer class="footerToFixed">
+		
+	</footer>
+</div>
+</body>
+<script type="text/javascript" src="js/zepto.min.js"></script>
+<script type="text/javascript">
+	$(function (){
+	
+	})
+</script>
+</html>	

@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>立即支付</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=0.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+	<meta name=”apple-mobile-web-app-capable” content=”yes” />
+	<meta name="format-detection" content="telephone=no">
+	<link rel="stylesheet" type="text/css" href="css/default.css">
+	<link rel="stylesheet" href="css/iconfont/iconfont.css">
+	<script type="text/javascript" src="js/common.js"></script>
+<style>
+@media only screen and (min-width: 375px){
+    .srcollBox{height: 6rem}
+}
+@media only screen and (min-width: 320px){
+   .srcollBox{height: 7.2rem}
+}
+</style>
+</head>
+<body>
+<div class="popDiv">
+	<div class="popBg"></div>
+	<div id="barCodeBox" class="popBox">
+		<div class="tipsComponent">
+			<div class="tipHead2">感谢您选择空箱子服务<br>请向收银员出示此条码付款</div>
+			<div class="tipBody">
+				<div class="barCodeBox clear">
+					<img src="./img/barCode/barCode.png"  alt="">
+				</div>
+				<div class="TotalText clear">Total:€84.00</div>
+				<div class="sweepTips clear">
+					<div class="J_sweepBtnSmall">
+						<i class="icon iconfont">&#xe607;</i>
+						<p class="pText">扫一扫</p>
+					</div>
+					<span>付款后扫一扫商家确认码</span>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="wrap" onload="loaded()">
+	<header class="headerToFixed">
+		<!-- <div class="closeBtn">
+		   <a href="javascript:history.go(-1);"><i class="icon iconfont">&#xe600;</i></a>
+		</div>
+		<div class="headerTitle">
+			结算
+		</div> -->
+	</header>
+	<div class="mt1s8 contentWrap">
+		<div id="defaultAddress" class="addressComponent commonSubHeader">
+			<div class="addressDetailBox">
+				<p>
+					<span class="name">李晓明</span>
+					<span class="tel">18912340111</span>
+					<span class="addressDetail">北京市海淀区阜成路 10号玉慧大厦b座502b</span>
+					<span class="emailNum">100037</span>
+				</p>
+			</div>
+			<div class="editAddress fr">
+				<i class="icon iconfont">&#xe606;</i>
+			</div>
+		</div>
+		<div class="srcollBox">
+			<div id="wrapper">
+				<div  id="scroller">
+					<ul>
+						<li>
+								<div class="HWrapperBox">
+								<div id="Hwrapper0" class="Hwrapper">
+									<div id="Hscroller0" class="Hscroller">
+										<ul>
+											<li>
+												<div class="settleImg">
+													<img src="img/goods/settleImg.png" alt="兰蔻Lancome 小黑瓶精华肌底液">
+												</div>
+												<div class="settleQuanlity">
+													x<span>2</span>
+												</span>
+											</li>
+											<li>
+												<div class="settleImg">
+													<img src="img/goods/settleImg.png" alt="兰蔻Lancome 小黑瓶精华肌底液">
+												</div>
+												<div class="settleQuanlity">
+													x<span>2</span>
+												</span>
+											</li>
+											<li>
+												<div class="settleImg">
+													<img src="img/goods/settleImg.png" alt="兰蔻Lancome 小黑瓶精华肌底液">
+												</div>
+												<div class="settleQuanlity">
+													x<span>2</span>
+												</span>
+											</li>
+											<li>
+												<div class="settleImg">
+													<img src="img/goods/settleImg.png" alt="兰蔻Lancome 小黑瓶精华肌底液">
+												</div>
+												<div class="settleQuanlity">
+													x<span >1</span>
+												</span>
+											</li>
+											<li>
+												<div class="settleImg">
+													<img src="img/goods/settleImg.png" alt="兰蔻Lancome 小黑瓶精华肌底液">
+												</div>
+												<div class="settleQuanlity">
+													x<span>1</span>
+												</span>
+											</li>
+											<li>
+												<div class="settleImg">
+													<img src="img/goods/settleImg.png" alt="兰蔻Lancome 小黑瓶精华肌底液">
+												</div>
+												<div class="settleQuanlity">
+													x<span>1</span>
+												</span>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<div class="totalQuanBox fr">
+										共<span id="J_totalQuan">5</span>件
+										<div class="moreBtn">
+											<i class="icon iconfont">&#xe603;</i>
+										</div>
+								</div>
+							</div>
+						</li>
+						<li>
+								<div class="HWrapperBox">
+								<div id="Hwrapper1" class="Hwrapper">
+									<div id="Hscroller1" class="Hscroller">
+										<ul>
+											<li>
+												<div class="settleImg">
+													<img src="img/goods/settleImg.png" alt="兰蔻Lancome 小黑瓶精华肌底液">
+												</div>
+												<div class="settleQuanlity">
+													x<span>2</span>
+												</span>
+											</li>
+											<li>
+												<div class="settleImg">
+													<img src="img/goods/settleImg.png" alt="兰蔻Lancome 小黑瓶精华肌底液">
+												</div>
+												<div class="settleQuanlity">
+													x<span>2</span>
+												</span>
+											</li>
+											<li>
+												<div class="settleImg">
+													<img src="img/goods/settleImg.png" alt="兰蔻Lancome 小黑瓶精华肌底液">
+												</div>
+												<div class="settleQuanlity">
+													x<span>2</span>
+												</span>
+											</li>
+											<li>
+												<div class="settleImg">
+													<img src="img/goods/settleImg.png" alt="兰蔻Lancome 小黑瓶精华肌底液">
+												</div>
+												<div class="settleQuanlity">
+													x<span >1</span>
+												</span>
+											</li>
+											<li>
+												<div class="settleImg">
+													<img src="img/goods/settleImg.png" alt="兰蔻Lancome 小黑瓶精华肌底液">
+												</div>
+												<div class="settleQuanlity">
+													x<span>1</span>
+												</span>
+											</li>
+											<li>
+												<div class="settleImg">
+													<img src="img/goods/settleImg.png" alt="兰蔻Lancome 小黑瓶精华肌底液">
+												</div>
+												<div class="settleQuanlity">
+													x<span>1</span>
+												</span>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<div class="totalQuanBox fr">
+										共<span id="J_totalQuan">5</span>件
+										<div class="moreBtn">
+											<i class="icon iconfont">&#xe603;</i>
+										</div>
+								</div>
+							</div>
+						</li>
+						
+						
+					</ul>
+					<div class="paymentBox mts15">
+			<p class="paymentTitle">
+				支付方式
+			</p>
+			<div class="paymentWay">
+				<div class="wxBox">
+					<div class="check-box">
+						<input type="radio" name="payment" />
+					</div>
+					<div class="wx">
+						<img src="img/btn/weixin.png" alt="">
+					</div>
+				</div>
+				<div class="zfbBox">
+					<div class="check-box">
+						<input type="radio" name="payment" />
+					</div>
+					<div class="zfb">
+						<img src="img/btn/zfb.png" alt="">
+					</div>
+				</div>
+				<div class="cashBox">
+					<div class="check-box">
+						<input id="inCash" type="radio" name="payment" />
+					</div>
+					<div class="cashText">
+					收银台
+					</div>
+					<div class="cash" style="opacity:0">
+						<img src="img/btn/cash.png" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+			<div class="mts15 immediatePayTipsBox">
+				<p class="productAccount">商品金额 <span class="moneySpan">€75</span></p>
+				<p >
+				<label class="carriage">运费<span>€12</span></label>
+				<label class="carriage">减运费：<span>€1</span></label>
+				</p>
+				<p class="productAccount">应付款 <span class="redFontB">€84</span></p>
+			</div>
+		</div>
+		</div>
+		</div>			
+	</div>
+	<footer class="footerToFixed">
+		<!-- <div class="moneyBox">
+				<p class="productAccount">商品金额<span class="redFont">€72</span></p>
+				<label class="carriage">运费<span>€12</span></label>
+				<label class="cutCarriage">减运费<span>€1</span></label>
+		</div> -->
+		<div class="footerMenu mts15">
+			<ul>
+				<li>取消订单</li>
+				<li id="submitBtn" class="selectedBg">立即支付</li>
+			</ul>
+		</div>
+	</footer>
+</div>
+</body>
+</html>	
+<script type="text/javascript" src="js/iscroll.js"></script>
+<script type="text/javascript" src="js/zepto.min.js"></script>
+<script type="text/javascript" src="js/popDiv.js"></script>
+<script type="text/javascript" src="js/settleAccounts.js"></script>

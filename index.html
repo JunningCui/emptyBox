@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>空箱子</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=0.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+	<meta name=”apple-mobile-web-app-capable” content=”yes” />
+	<link rel="stylesheet" type="text/css" href="css/default.css">
+	<link rel="stylesheet" href="css/iconfont/iconfont.css">
+	<script type="text/javascript" src="js/common.js"></script>
+	<style>
+/*	.srcollBox{height: 6.2rem}
+@media only screen and (min-width: 320px) and (max-height:480px){
+   .srcollBox{height: 5.8rem}
+}
+@media only screen and (min-width: 320px) and (min-height:568px){
+   .srcollBox{height: 7.6rem}
+}
+@media only screen and (min-width: 375px) and (min-height:672px){
+    .srcollBox{height: 6.8rem}
+}
+@media only screen and (min-width: 414px) and (min-height:736px){
+   .srcollBox{height: 7.4rem}
+}*/
+#wrapper{    top: 0.9rem;
+    /*bottom: 3rem;*/
+}
+	</style>
+</head>
+<body onload="loaded()">
+<div class="popDiv">
+	<div class="popBg"></div>
+	<div class="popBox" id="popBox">
+		<div class="selectSalesComponent">
+			<div class="selectSalesHead">请选择为您结算的导购</div>
+			<div class="selectSalesBody">
+				<ul>
+					<li>
+						<div class="salePic fl">
+							<img src="img/sales/jennifer.png"  alt="">
+						</div>
+						<div class="saleName fr">Jsnnifer Li</div>
+						<input type="radio"  class="hide" name="salesName" value="001">
+					</li>
+					<li>
+						<div class="salePic fl">
+							<img src="img/sales/jennifer.png"  alt="">
+						</div>
+						<div class="saleName fr">Jsnnifer Li</div>
+						<input type="radio" class="hide" name="salesName" value="002">
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="popDiv">
+	<div class="popBg"></div>
+	<div id="overWeightBox" class="popBox">
+		<div class="tipsComponent">
+			<div class="tipHead">箱子已超重</div>
+			<div class="tipBody">
+				<div id="confirmBtn" class="HcommonBtnG">再开一箱</div>
+				<div id="cancelBtn" class="HcommonBtnS">取消</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="wrap" >
+	<input type="hidden" value="6.8349" name="exchangeRate">
+	<input type="hidden" value="€" name="currency">
+	<input type="hidden" value="0" name="AllAcount">
+	<header class="headerToFixed">
+		<!-- <div class="closeBtn">
+		   <i class="icon iconfont">&#xe600;</i>
+		</div>
+		<div class="headerTitle">
+			Parashop
+		</div> -->
+		<div class="nextBtn fr">下一箱&nbsp;<i class="icon iconfont">&#xe605;</i></div>
+		<div class="preBtn fr">上一箱&nbsp;<i class="icon iconfont">&#xe604;</i></div>
+	</header>
+	<div class="mt1s8 contentWrap">
+		
+		<!-- <div class="srcollBox"> -->
+		<div id="wrapper">
+					<div  id="scroller">
+						<div class="sweepComponent">
+					<div class="J_sweepBtn">
+						<i class="icon iconfont">&#xe607;</i>
+						<p class="pText">扫一扫</p>
+					</div>
+					<div class="sweepText">
+						<p>
+							<span>满€68</span>
+							<span>9折</span>
+						</p>
+						<p>
+							<span>满€88</span>
+							<span>9折</span>
+							<span>送5€现金券</span>
+						</p>
+						<p>
+							<span>满€118</span>
+							<span>9折</span>
+							<span>送10€现金券</span>
+						</p>
+					</div>
+				</div>
+				<!-- <div id="pullDown">
+					<span class="pullDownIcon"></span>
+					<span class="pullDownLabel">Pull down to refresh...</span>
+				</div>
+				<ul id="newLoad">
+				</ul> -->
+				<ul  id="J_productList" class="productList">
+					<li>
+						<div class="pImgS">
+							<a href="productDetail.html"><img src="img/goods/img1.png" alt="兰蔻Lancome 小黑瓶精华肌底液"></a>
+						</div>
+						<div class="pDetail">
+							<p class="pTitle"><a href="productDetail.html">兰蔻Lancome 小黑瓶精华肌底液</a></p>
+							<div class="pOperation">
+								<input type="hidden" value="1" name="singlePurQuan" />
+								<input type="hidden" value="16"  name="singlePrice"/>
+								<input type="hidden" value="160"  name="singlePriceInside"/>
+								<input type="hidden" value="0.35"  name="singleKg"/>
+								<div class="addToShopCart">
+									<span class="J_subtract"><i class="icon iconfont">&#xe602;</i></span>
+									<span class="J_num">1</span>
+									<span class="J_add"><i class="icon iconfont">&#xe601;</i></span>
+								</div>
+								<div class="J_singleTotalA">
+									小计<span class="countSingleA redFont">€16</span>
+								</div>
+								<span class="deleteBtn fr">
+									<span class="J_deleteBtn"><i class="icon iconfont">&#xe600;</i></span>
+								</span>
+							</div>
+						</div>
+					</li>
+				<!-- 	<li>
+						<div class="pImgS">
+							<a href="productDetail.html"><img src="img/goods/img1.png" alt="兰蔻Lancome 小黑瓶精华肌底液"></a>
+						</div>
+						<div class="pDetail">
+							<p class="pTitle"><a href="productDetail.html">兰蔻Lancome 小黑瓶精华肌底液</a></p>
+							<div class="pOperation">
+								<input type="hidden" value="1" name="singlePurQuan" />
+								<input type="hidden" value="16"  name="singlePrice"/>
+								<input type="hidden" value="160"  name="singlePriceInside"/>
+								<input type="hidden" value="0.35"  name="singleKg"/>
+								<div class="addToShopCart">
+									<span class="J_subtract"><i class="icon iconfont">&#xe602;</i></span>
+									<span class="J_num">1</span>
+									<span class="J_add"><i class="icon iconfont">&#xe601;</i></span>
+								</div>
+								<div class="J_singleTotalA">
+									小计<span class="countSingleA redFont">€16</span>
+								</div>
+								<span class="deleteBtn fr">
+									<span class="J_deleteBtn"><i class="icon iconfont">&#xe600;</i></span>
+								</span>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="pImgS">
+							<a href="productDetail.html"><img src="img/goods/img1.png" alt="兰蔻Lancome 小黑瓶精华肌底液"></a>
+						</div>
+						<div class="pDetail">
+							<p class="pTitle"><a href="productDetail.html">兰蔻Lancome 小黑瓶精华肌底液</a></p>
+							<div class="pOperation">
+								<input type="hidden" value="1" name="singlePurQuan" />
+								<input type="hidden" value="16"  name="singlePrice"/>
+								<input type="hidden" value="160"  name="singlePriceInside"/>
+								<input type="hidden" value="0.35"  name="singleKg"/>
+								<div class="addToShopCart">
+									<span class="J_subtract"><i class="icon iconfont">&#xe602;</i></span>
+									<span class="J_num">1</span>
+									<span class="J_add"><i class="icon iconfont">&#xe601;</i></span>
+								</div>
+								<div class="J_singleTotalA">
+									小计<span class="countSingleA redFont">€16</span>
+								</div>
+								<span class="deleteBtn fr">
+									<span class="J_deleteBtn"><i class="icon iconfont">&#xe600;</i></span>
+								</span>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="pImgS">
+							<a href="productDetail.html"><img src="img/goods/img1.png" alt="兰蔻Lancome 小黑瓶精华肌底液"></a>
+						</div>
+						<div class="pDetail">
+							<p class="pTitle"><a href="productDetail.html">兰蔻Lancome 小黑瓶精华肌底液</a></p>
+							<div class="pOperation">
+								<input type="hidden" value="1" name="singlePurQuan" />
+								<input type="hidden" value="16"  name="singlePrice"/>
+								<input type="hidden" value="160"  name="singlePriceInside"/>
+								<input type="hidden" value="0.35"  name="singleKg"/>
+								<div class="addToShopCart">
+									<span class="J_subtract"><i class="icon iconfont">&#xe602;</i></span>
+									<span class="J_num">1</span>
+									<span class="J_add"><i class="icon iconfont">&#xe601;</i></span>
+								</div>
+								<div class="J_singleTotalA">
+									小计<span class="countSingleA redFont">€16</span>
+								</div>
+								<span class="deleteBtn fr">
+									<span class="J_deleteBtn"><i class="icon iconfont">&#xe600;</i></span>
+								</span>
+							</div>
+						</div>
+					</li> -->
+					
+				</ul>
+				<!-- <div id="pullUp">
+					<span class="pullUpIcon"></span>
+					<span class="pullUpLabel">Pull up to refresh...</span>
+				</div> -->
+				
+			</div>
+		</div>
+	<!-- </div> -->
+	</div>
+	<footer class="footerToFixed">
+			<div id="topBar" class="topBar">
+				<a href="javascript:myScroll.scrollToElement(document.querySelector('#scroller li:nth-child(1)'), null, null, easing)"><img src="img/btn/toTop.png"  alt=""></a>
+			</div>
+			<div class="totalAcountBox mts14">
+					<p>
+						<label class="dutyFreePrice">免税价：<span class="redFont">€43.00</span></label>
+						<label class="totalAcount">总金额：<del id="J_AllAcount" >€0.00</del></label>
+					</p>
+					<p >
+						<label class="saveCompare redFont">比国内省: <span>￥0.00</span></label>
+						<label class="carriage">每箱运费：<span>€12</span></label> 
+					</p>
+				</div>
+			<div id="goCheck" class="saveBtn">
+				去结算<span id="allProQuan" ></span>
+			</div>
+			<!-- <div class="footerMenu mts15">
+				<ul>
+					<li><a href="suggestProducts.html">再装点</a></li>
+					<li id="goCheck" class="allProQuan"><a href="./settleAccounts.html"></a>去结算<span id="allProQuan" ></span></li>
+				</ul>
+			</div> -->
+	</footer>
+</div>
+<script type="text/javascript" src="js/iscroll.js"></script>
+<script type="text/javascript" src="js/zepto.min.js"></script>
+<script type="text/javascript" src="js/popDiv.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript" src="js/shoppingCart.js"></script>
+
+</body>
+</html>	

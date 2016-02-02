@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>detail</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=0.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+	<meta name=”apple-mobile-web-app-capable” content=”yes” />
+	<link rel="stylesheet" type="text/css" href="css/default.css">
+	<link rel="stylesheet" href="css/iconfont/iconfont.css">
+	<script type="text/javascript" src="js/common.js"></script>
+</head>
+<style>
+
+@media only screen and (min-width: 320px) and (max-height:480px){
+   .srcollBox{height: 8rem}
+}
+@media only screen and (min-width: 320px) and (min-height:568px){
+   .srcollBox{height: 9.6rem}
+}
+@media only screen and (min-width: 375px){
+    .srcollBox{height: 9rem}
+}
+@media only screen and (min-width: 414px){
+   .srcollBox{height: 9.6rem}
+}
+</style>
+<body>
+<div class="wrap">
+	<header class="headerToFixed">
+		<!-- <div class="closeBtn">
+		   <a href="#" onclick="history.go(-1); return fasle"><i class="icon iconfont">&#xe600;</i></a>
+		</div>
+		<div class="headerTitle">
+			商品详情
+		</div> -->
+	</header>
+
+	<div class="mt1s8 contentWrap">
+		<div class="srcollBox">
+			<div id="wrapper">
+				<div id="scroller">
+					<ul>
+						<li>
+							<div class="productDetailBox">
+								<div class="imgBox">
+									<img src="img/goods/produce1Big.png"  alt="">
+								</div>
+								<div class="detailTitle">
+									<p>兰蔻Lancome 小黑瓶精华肌底液30ml美丽</p>
+									新立体素颜紧致
+								</div>
+								<div class="detailSubTitle">
+									<p class="storePrice">店内价<span class="redFont">€16.00</span></p>
+									<p class="insidePrice">国内价&nbsp;<span>￥180</span></p>
+								</div>
+								<div class="detailIntroduce">兰蔻小黑瓶，全龄百搭保养圣品，7天修护肌底，看见光泽改善;瞬间渗透，提升后续保养功效.7项独家专利，根本改善肤质。斑点/细纹/毛孔粗糙/肤色暗沉 一一解决。兰蔻小黑瓶，全龄百搭保养圣品，7天修护肌底，看见光泽改善;瞬间渗透，提升后续保养功效.7项独家专利，根本改善肤质。斑点/细纹/毛孔粗糙/肤色暗沉 一一解决。兰蔻小黑瓶，全龄百搭保养圣品，7天修护肌底，看见光泽改善;瞬间渗透，提升后续保养功效.7项独家专利，根本改善肤质。斑点/细纹/毛孔粗糙/肤色暗沉 一一解决。兰蔻小黑瓶，全龄百搭保养圣品，7天修护肌底，看见光泽改善;瞬间渗透，提升后续保养功效.7项独家专利，根本改善肤质。斑点/细纹/毛孔粗糙/肤色暗沉 一一解决。兰蔻小黑瓶，全龄百搭保养圣品，7天修护肌底，看见光泽改善;瞬间渗透，提升后续保养功效.7项独家专利，根本改善肤质。斑点/细纹/毛孔粗糙/肤色暗沉 一一解决。兰蔻小黑瓶，全龄百搭保养圣品，7天修护肌底，看见光泽改善;瞬间渗透，提升后续保养功效.7项独家专利，根本改善肤质。斑点/细纹/毛孔粗糙/肤色暗沉 一一解决。</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer class="footerToFixed">
+		<div class="footerMenu">
+			<ul>
+				<li>装入箱子</li>
+				<li>店首页</li>
+			</ul>
+		</div>
+	</footer>
+</div>
+
+</body>
+<script type="text/javascript" src="js/iscroll.js"></script>
+<script type="text/javascript" src="js/zepto.min.js"></script>
+<script type="text/javascript">
+    //滚动条
+    var myScroll;
+    function loaded () {
+        myScroll = new IScroll('#wrapper', {  
+            probeType: 2,  
+            scrollbars: false,//有滚动条  
+            mouseWheel: true,//允许滑轮滚动  
+            fadeScrollbars: false,//滚动时显示滚动条，默认影藏，并且是淡出淡入效果  
+            bounce:true,//边界反弹  
+            interactiveScrollbars:true,//滚动条可以拖动  
+            click: true ,// 允许点击事件  
+            keyBindings:true,//允许使用按键控制  
+          //  disableMouse: true,
+            momentum:true// 允许有惯性滑动  
+        });  
+    }
+    document.addEventListener('DOMContentLoaded',loaded, false);
+	</script>
+</html>	

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>待支付</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=0.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.3" />
+	<meta name=”apple-mobile-web-app-capable” content=”yes” />
+	<link rel="stylesheet" type="text/css" href="css/default.css">
+	<link rel="stylesheet" href="css/iconfont/iconfont.css">
+	<link rel="stylesheet" type="text/css" href="css/receivingConfirmation.css">
+	<script type="text/javascript" src="js/resize.js"></script>
+</head>
+<body>
+<div class="wrap">
+	<header class="headerToFixed">
+		<div class="closeBtn">
+		   <i class="icon iconfont">&#xe60a;</i>
+		</div>
+		<!-- <div class="headerTitle">
+			待收货
+		</div> -->
+	</header>
+	<div class="mt1s5 contentWrap">
+		<div class="srcollBox">
+			<div id="wrapper">
+				<div  id="scroller">
+					<ul>
+						<li>
+							<div class="receivingStatusComponent mts15">
+								<!-- <div class="recevingTitle">
+									 <div class="shopName fl">订单&nbsp;PARASHOP</div>
+									 <div class="goodsStatus redFont fl">待付款</div>
+								</div> -->
+								<div class="recevingBody">
+									<div class="shopImg fl">
+										<img src="./img/shopIndex/shopAuxiliary.png" alt="">
+									</div>
+									<div class="boxInfo fl">
+										<p >
+											<span class="fl boxName text-hidden">兰蔻Lancome小黑瓶精华肌底液</span>
+											<span class="fr boxtime">
+												 2015/10/20 14:30:12
+											</span>
+										</p>
+										<p class="boxNum">共<span>2</span>箱</p>
+										<div class="boxAccounts">
+											<div class="totalAcount fl">总金额<span id="J_AllAcount" class="redFont">€0.00</span></div>
+											<div class="saveCompare fr">比国内省: <span>￥0.00</span></div>
+										</div>
+									</div>
+								</div>
+								<div class="receivingFooter">
+									<div class="btnBox fr">
+										<div id="payBtn" class="ScommonBtnG">付款</div>
+										<div id="cancelBtn" class="ScommonBtnS">取消订单</div>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="receivingStatusComponent mts15">
+								<!-- <div class="recevingTitle">
+									 <div class="shopName fl">订单&nbsp;PARASHOP</div>
+									 <div class="goodsStatus redFont fl">待付款</div>
+								</div> -->
+								<div class="recevingBody">
+									<div class="shopImg fl">
+										<img src="./img/shopIndex/shopAuxiliary.png" alt="">
+									</div>
+									<div class="boxInfo fl">
+										<p >
+											<span class="fl boxName text-hidden">兰蔻Lancome小黑瓶精华肌底液</span>
+											<span class="fr boxtime">
+												 2015/10/20 14:30:12
+											</span>
+										</p>
+										<p class="boxNum">共<span>2</span>箱</p>
+										<div class="boxAccounts">
+											<div class="totalAcount fl">总金额<span id="J_AllAcount" class="redFont">€0.00</span></div>
+											<div class="saveCompare fr">比国内省: <span>￥0.00</span></div>
+										</div>
+									</div>
+								</div>
+								<div class="receivingFooter">
+									<div class="btnBox fr">
+										<div id="payBtn" class="ScommonBtnG">付款</div>
+										<div id="cancelBtn" class="ScommonBtnS">取消订单</div>
+									</div>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer class="footerToFixed">
+	</footer>
+</div>
+</body>
+<script type="text/javascript" src="js/zepto.min.js"></script>
+<script type="text/javascript" src="js/iscroll.js"></script>
+<script type="text/javascript">
+	function loaded (id) {
+    var myScroll;
+	myScroll = new IScroll(id);
+	document.addEventListener('DOMContentLoaded',loaded, false);
+}
+$(function (){
+	loaded("#wrapper");
+})
+</script>
+</html>

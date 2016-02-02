@@ -1,0 +1,83 @@
+.shopHead{}
+.shopHead .imgBox{height: 2.6rem;}
+.shopHead .imgBox img{width: 100%;height: 100%;}
+.shopHead .detailBox{padding: 0.25rem;box-sizing: border-box;width: 100%;height: 1.2rem;border-bottom: 1px solid #d0d0d2;font-size: 0.24rem;line-height: 0.3rem;background-color: #fff;}
+.shopBody{border-top: 1px solid #d0d0d2}
+/*.shopBody .tabComponent{box-sizing: border-box;width: 100%;background: #fff;height: auto;}
+.shopBody .tabComponent .tabListBox{padding: 0.25rem;box-sizing: border-box;}
+.shopBody .tabComponent .tabListBox ul.tabList{width: 100%;height: 0.7rem;border: 1px solid #0eb311;border-radius: 5px}
+.shopBody .tabComponent .tabListBox ul.tabList li{float: left;width: 33%;text-align: center;font-size: 0.26rem;line-height: 0.7rem;box-sizing: border-box;}
+.shopBody .tabComponent .tabListBox ul.tabList li.selected{float: left;width: 33%;text-align: center;font-size: 0.26rem;background: #0eb311;color: #fff;}
+.shopBody .tabComponent .tabListBox ul.tabList li:first-child{border-bottom-left-radius:5px;border-top-left-radius:5px;border-right: 1px solid #ddd;}
+.shopBody .tabComponent .tabListBox ul.tabList li:nth-child(2){width: 34.1%;}
+.shopBody .tabComponent .tabListBox ul.tabList li:last-child{border-left: 1px solid #ddd;}
+@media only screen and (min-width: 1080px) and (max-height:1920px){
+   .shopBody .tabComponent .tabListBox ul.tabList li:last-child{width: 34%}
+}
+*/
+.shopBody .tabComponent{box-sizing: border-box;width: 100%;background: #fff;height: auto;}
+.shopBody .tabComponent .tabListBox{padding: 0.25rem;box-sizing: border-box;}
+.shopBody .tabComponent .tabListBox ul.tabList{width: 100%;height: 0.7rem;border: 1px solid #0eb311;border-radius: 5px;box-sizing: border-box; display:-moz-box;display:-webkit-box;display:box;}
+.shopBody .tabComponent .tabListBox ul.tabList li{text-align: center;font-size: 0.26rem;line-height: 0.67rem;box-sizing: border-box;-moz-box-flex:1;-webkit-box-flex:1;box-flex:1;}
+.shopBody .tabComponent .tabListBox ul.tabList li.selected{text-align: center;font-size: 0.26rem;background: #0eb311;color: #fff}
+.shopBody .tabComponent .tabListBox ul.tabList li:first-child{border-bottom-left-radius:5px;border-top-left-radius:5px;border-right: 1px solid #ddd;}
+
+
+
+
+
+
+
+.busActivity,.goodsList{}
+
+.emptyBoxService{padding: 0 0.2rem;box-sizing: border-box;font-size: 0.18rem;line-height: 0.3rem;min-height: 1.7rem;
+    text-indent: 2em;}
+.busActivity{display: none;background: #fff}
+.goodsList{background: #fff}
+.partnerCoupons{display: none;background: #fff}
+
+.busActivity .srcollBox #wrapper ul.productList li,.goodsList .srcollBox #wrapper ul.productList li{margin-top: 0 !important;border-bottom: none;}
+
+.operateBtnG{margin:0 auto;background: #0db310;width:100%;line-height: 0.88rem;font-family: fz,"微软雅黑";color:#fff;font-size: 0.32rem;text-align: center;box-sizing: border-box;}
+.operateBtnG .icon{font-size: 0.32rem;padding-right: 0.22rem}
+.borderTop1{height: 1px;background-color: #d9d9d9;width: 100%}
+
+
+
+.partnerCoupons{}
+.partnerCoupons .partnerList{}
+.partnerCoupons .partnerList li{height: 0.93rem;padding: 0 0.2rem;box-sizing: border-box;background-color: #fff;line-height: 0.93rem;border-top: 1px solid #d0d0d2;}
+.partnerCoupons .partnerList li .iconBox{display: inline-block;width: 2.05rem;height: 100%;margin: 0 0.15rem}
+.partnerCoupons .partnerList li .iconBox img{width: 100%;height: 100%}
+.partnerCoupons .partnerList li .activityTips{float: right;width: 50%;color: #e32e33;display: inline-block;text-align: right;font-size: 0.18rem;font-family: fz,"微软雅黑";overflow: hidden;height: 100%;}
+
+
+
+.operateBar{width: 100%;height: 0.72rem;background: #fff;box-sizing:border-box;padding: 0 0.2rem}
+.goodsKindsBtn{width: 0.6rem;text-align: left;}
+.goodsKindsBtn .icon{line-height: 0.72rem;font-size: 0.38rem;color: #505050}
+.shoppingCartBtn{width: 0.6rem;text-align: right;}
+.shoppingCartBtn .icon{line-height: 0.72rem;font-size: 0.38rem;color: #505050}
+.goodsKindsBtn .icon:hover,.goodsKindsBtn .icon:focus,.shoppingCartBtn .icon:hover,.shoppingCartBtn .icon:focus{color: #3c3b3b}
+
+.goodsKindLabel{display:box;display:-moz-box;display:-webkit-box;width: 100%;height: 0.72rem;text-align: center;line-height: 0.72rem;background: #fff;color: #505050;font-size: 0.28rem;z-index: 1000}
+
+.goodsKindLabel .kinds,.goodsKindLabel .brands,.goodsKindLabel .prices{box-flex:1;-webkit-box-flex:1;-moz-box-flex:1;box-sizing: border-box;padding: 0 0.2rem;position: relative;}
+.goodsKindLabel .kinds .line,.goodsKindLabel .brands .line,.goodsKindLabel .prices .line{position: absolute;height: 0.34rem;width: 1px;background: #dcdcdc;top: 0.2rem;right: 0;}
+.goodsKindLabel .brands{}
+.goodsKindLabel .prices{}
+.goodsKindLabel .selected{color: #36bf29 !important;border-bottom: 4px solid #36bf29;}
+.goodsKindLabel .selected .icon{color: #36bf29 !important}
+
+.kindBox{display: none;}
+.kindBox .popBg{position: absolute; top: 0;left: 0; background-color: #000; right: 0;bottom: 0;z-index: 999;opacity: 0.35;}
+.goodsKindLabelFixed{position: fixed;}
+
+.tabLabel{}
+.goodsKindsTerm,.goodsBrandsTerm,.goodsPricesTerm{display:none;position: absolute;z-index: 1001;height: auto;width: 100%;box-sizing:border-box;padding: 0.2rem 0.24rem;top: 0.9rem;background-color: #fff;border-top:1px solid #dcdcdc}
+.goodsKindsTerm .termA,.goodsBrandsTerm .termA{display: inline-block;height: 0.5rem;box-sizing:border-box;padding-right: 0.24rem;color: #959595;line-height: 0.5rem;}
+.goodsPricesTerm p .termA{display: inline-block;width: 100%}
+.goodsPricesTerm p{color: #959595;line-height: 0.5rem;}
+.goodsKindsTerm .termA:focus,.goodsKindsTerm .termA:active,.goodsBrandsTerm .termA:focus,.goodsBrandsTerm .termA:active,.goodsPricesTerm p .termA:focus,.goodsPricesTerm p .termA:active{color: #36bf29}
+
+

@@ -1,0 +1,14 @@
+{
+    "prodctList": [
+        {
+            "prodctName": "lancome",
+            "quanlity": "0.5kg",
+            "amount": "$300"
+        },
+        {
+            "prodctName": "lancome",
+            "quanlity": "0.5kg",
+            "amount": "$300"
+        }
+    ]
+}
